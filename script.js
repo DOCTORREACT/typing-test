@@ -1,4 +1,4 @@
-let text = 'Aorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti laudantium minima ratione consequuntur incidunt reiciendis veniam! Dicta, mollitia suscipit?'
+let text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti laudantium minima ratione consequuntur incidunt reiciendis veniam! Dicta, mollitia suscipit?Aorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti laudantium minima ratione consequuntur incidunt reiciendis veniam! Dicta, mollitia suscipit?Aorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti laudantium minima ratione consequuntur incidunt reiciendis veniam! Dicta, mollitia suscipit?Aorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti laudantium minima ratione consequuntur incidunt reiciendis veniam! Dicta, mollitia suscipit?Aorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti laudantium minima ratione consequuntur incidunt reiciendis veniam! Dicta, mollitia suscipit?Aorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti laudantium minima ratione consequuntur incidunt reiciendis veniam! Dicta, mollitia suscipit?'
 
 
 const inputText = document.querySelector('.input_text')
@@ -127,7 +127,7 @@ let counterTwo = 1
 let textBoxMarginTop = 0
 
 function dissapeareFullRow() {
-    let deleteRow = boxSize < 292 ? -55 : -76
+    let deleteRow = boxSize < 292 ? -54 : -76
     counter++
     let lines = document.querySelectorAll('.line')
     lines[counter - 1].classList.add('diss')
@@ -139,8 +139,9 @@ function dissapeareFullRow() {
     return
 }
 
+
 function apeareClearRow() {
-    let apearRow = boxSize < 292 ? 55 : 76
+    let apearRow = boxSize < 292 ? 54 : 76
     if (textBox.marginTop > 0) { return }
 
     let lines = document.querySelectorAll('.line')
@@ -239,6 +240,7 @@ $('.circle_animation').css('stroke-dashoffset', -188);
 inputText.addEventListener('focus', () => {
     lastLetter()
     document.getElementById('pointer').classList = 'pointer_hidden'
+    
     var start = Date.now();
       timer = setInterval(() => {
 
@@ -269,12 +271,6 @@ function popupClose() {
 }
 
 tryAgainButton.addEventListener('click', () => { location.reload() })
-
-document.addEventListener('keyup', (e) => {
-    if(e.key == 'Backspace') {
-        return false
-    }
-})
 
 window.addEventListener('resize', () => {
     boxSize = textBox.clientWidth

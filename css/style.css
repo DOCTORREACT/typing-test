@@ -10,7 +10,7 @@
 }
 
 body {
-margin: 0px auto;
+    margin: 0px auto;
 }
 
 .container {
@@ -20,6 +20,7 @@ margin: 0px auto;
     min-width: 320px;
     max-height: 1158px;
     background-color: #f6f6f7;
+    /* scroll-behavior: unset; */
 }
 
 .section_top {
@@ -31,7 +32,7 @@ margin: 0px auto;
 }
 
 .content {
-margin: 31px auto;
+  margin: 31px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,14 +149,14 @@ div[class^="row"] {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 50%;
     padding: 10px 40px 0 40px;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     line-height: 76px;
     letter-spacing: 4.83px;
     opacity: 0;
-    overflow: auto;
+    overflow:hidden
 }
 
  /* text behavior  ---->*/
